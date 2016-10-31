@@ -10,6 +10,9 @@
 		- `cin`은 삽입 연산자 `>>` 를 사용해 console로 부터 무언가를 저장
 	- `<<` 나 `>>` 를 화살표 방향이라고 생각하면 쉽게 이해 가능
 	- 입력이나 출력 형식을 지정하지 않고 사용 (*i.e.* `%d`, `%c`, etc.)
+
+
+## EXAMPLE: I/O METHOD
 - 예제#1a:
 	- C:
 	```c
@@ -68,6 +71,9 @@
 - C++에서는 참/거짓을 명확하게 사용하기 위해 `bool`이라는 타입이 추가됨
 	- 참(true): `true`
 	- 거짓(false): `false`
+
+
+## EXAMPLE: BOOL TYPE
 - 예제#2a:
 	- C:
 	```c
@@ -138,6 +144,9 @@
 - C++11 에 추가된 `auto` 타입 지정자를 사용하면 compile time에 type을 추론해 어떤 type인지 결정함
 - 기본 내장 type을 포함해 compile time에 추론 가능한 모든 type에서 사용 가능
 - 만약 compile time에 추론이 불가능하면, 오류가 발생함.
+
+
+## EXAMPLE: AUTO KEYWORD
 - 예제#3a:
 	- C++98:
 	```cpp
