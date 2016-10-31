@@ -60,6 +60,7 @@
 	}
 	```
 
+
 ## BOOL TYPE
 - C에서는 조건문(if statement)의 참/거짓 을 표현하기 위해 `int`를 사용
 	- 참(true): 0을 제외한 모든 값
@@ -105,8 +106,10 @@
 	{
 		bool b = true;
 
-		std::cout << b << std::endL;
-		std::cout << !b << std::endL;
+		std::cout << b << std::endl;
+		std::cout << !b << std::endl;
+
+		return 0;
 	}
 	```
 - 예제#2c:
@@ -119,12 +122,14 @@
 		bool b = true;
 
 		std::cout.setf(std::ios::boolalpha);
-		std::cout << b << std::endL;
-		std::cout << !b << std::endL;
+		std::cout << b << std::endl;
+		std::cout << !b << std::endl;
 
 		std::cout.unsetf(std::ios::boolalpha);
-		std::cout << b << std::endL;
-		std::cout << !b << std::endL;
+		std::cout << b << std::endl;
+		std::cout << !b << std::endl;
+
+		return 0;
 	}
 	```
 
