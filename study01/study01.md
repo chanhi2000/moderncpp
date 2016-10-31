@@ -54,7 +54,7 @@
 		std::cout << "Input the number: ";
 		std::cin >> x;
 
-		std::cout << "x = " << x << ctd:endL;
+		std::cout << "x = " << x << std::endl;
 
 		return 0;
 	}
