@@ -133,4 +133,70 @@
 	}
 	```
 
+## AUTO KEYWORD
+- 표현식의 타입을 결정하는 건 때로는 어려운 일
+- C++11 에 추가된 `auto` 타입 지정자를 사용하면 compile time에 type을 추론해 어떤 type인지 결정함
+- 기본 내장 type을 포함해 compile time에 추론 가능한 모든 type에서 사용 가능
+- 만약 compile time에 추론이 불가능하면, 오류가 발생함.
+- 예제#3a:
+	- C++98:
+	```cpp
+	#include <iostream>
 
+	int main()
+	{
+		int i1=10;
+		double d1 = 3.14;
+
+		return 0;
+	}
+	```
+	- C++11:
+	```cpp
+	#include <iostream>
+
+	int main()
+	{
+		auto i2=10;
+		auto d2 = 3.14;
+
+		return 0;
+	}	
+	```
+- 예제#3b:
+	- C++98:
+	```cpp
+	#include <iostream>
+	#include <vector>
+	#include <string>
+	#include <tuple>
+
+	int main() 
+	{
+		std::vector<std::tuple<std::string, int, double >> vStudents;
+
+		for (std:vector<std::tuple<std::string, int, double>>::iterator iter=vStudents.begin(); iter != vStudents.end(); ++iter)
+		{
+			...
+		}
+		return 0;
+	}
+	```
+	- C++11:
+	```cpp
+	#include <iostream>
+	#include <vector>
+	#include <string>
+	#include <tuple>
+
+	int main() 
+	{
+		std::vector<std::tuple<std::string, int, double >> vStudents;
+
+		for (auto iter=vStudents.begin(); iter != vStudents.end(); ++iter)
+		{
+			...
+		}
+		return 0;
+	}
+	```
