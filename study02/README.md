@@ -7,7 +7,7 @@
 	- 범위 기반 `for`문의 등장!
 
 ## EXAMPLE:
-- 예제01a:
+- 예제#01a:
 	- C/C++98:
 	```cpp
 	#include <iostream>
@@ -35,7 +35,8 @@
 
 		return 0;
 	}
-- 예제01b:
+	```
+- 예제#01b:
 	- python:
 	```python
 	def mean(seq):
@@ -46,9 +47,8 @@
 		return n / len(seq)
 
 	```
-	
 	- C++11:
-	```
+	```cpp
 	auto mean(const Sequence& seq)
 	{
 		
@@ -93,7 +93,6 @@
 		return 0;
 	}
 	```
-
 	- C++:
 	```cpp
 	int main()
@@ -112,7 +111,6 @@
 		return 0;
 	}
 	```
-
 	- C++:
 	```cpp
 	int main()
