@@ -7,8 +7,8 @@
 	- 범위 기반 `for`문의 등장!
 
 ## EXAMPLE:
-- 예제#01a:
-	- C/C++98:
+- ### 예제#01a:
+	- [C/C++98][ex01a]:
 	```cpp
 	#include <iostream>
 
@@ -36,8 +36,8 @@
 		return 0;
 	}
 	```
-- 예제#01b:
-	- python:
+- ### 예제#01b:
+	- [python][ex01b]:
 	```python
 	def mean(seq):
 		n = 0.0
@@ -73,8 +73,8 @@
 		- 반환: `delete[]`
 
 ## EXAMPLE: MEM ALLOC/DEALLOC
-- 예제#02a:
-	- C:
+- ### 예제#02a:
+	- [C][ex02a(1)]:
 	```c
 	int main()
 	{
@@ -93,7 +93,7 @@
 		return 0;
 	}
 	```
-	- C++:
+	- [C++][ex02a(2)]:
 	```cpp
 	int main()
 	{
@@ -111,7 +111,8 @@
 		return 0;
 	}
 	```
-	- C++:
+- ### 예제#02b:
+	- [C++][ex02b]:
 	```cpp
 	int main()
 	{
@@ -140,8 +141,8 @@
 
 
 ## EXAMPLE: NULL POINTEER
-- 예제#03a:
-	- C++98:
+- ### 예제#03a:
+	- [C++98][ex03a]:
 	```cpp
 	#include <iostream>
 	#define NULL 0
@@ -164,7 +165,7 @@
 		return 0;
 	}
 	```
-	- C++11:
+	- [C++11][ex03a]:
 	```cpp
 	#include <iostream>
 
@@ -185,8 +186,8 @@
 		return 0;
 	}
 	```
-- 예제#03b:
-	- C++11:
+- ### 예제#03b:
+	- [C++11][ex03b]:
 	```cpp
 	#include <iostream>
 
@@ -199,8 +200,8 @@
 		return 0;
 	}
 	```
-- 예제#03c:
-	- C++98:
+- ### 예제#03c:
+	- [C++98][ex03c]:
 	```cpp
 	#include <iostream>
 
@@ -217,7 +218,7 @@
 		return 0;
 	}
 	```
-	- C++11:
+	- [C++11][ex03c]:
 	```cpp
 	#include <iostream>
 
@@ -235,7 +236,15 @@
 	}
 	```
 
-	
+[ex01a]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example01a.cpp
+[ex01b]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example01b.py
+[ex02a(1)]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example02a.c
+[ex02a(2)]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example02a.cpp
+[ex02b]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example02b.cpp
+[ex03a]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03a.cpp
+[ex03b]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03b.cpp
+[ex03c]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03c.cpp
+
 
 
 
