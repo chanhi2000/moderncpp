@@ -2,8 +2,9 @@
 description: 
 
 ## REMINDERS
-- ~1st study to complete~
-- 2nd study to start
+- ~~1st study to complete~~
+- 2nd study to complete
+	- static_cast to finish
 - 3rd study to start
 
 ## SLIDES:
@@ -28,7 +29,11 @@ description:
 	- (1st study) `printf`, `scanf` -> `std::cin`, `std::cout`
 	- (1st study) `bool` type
 	- (1st study) `auto`
-
+	- (2nd study) Range-based `for`
+	- (2nd study) `malloc`, `free` -> `new`, `delete`
+	- (2nd study) `NULL` -> `nullptr`
+	- (2nd study) `static_cast`
+	
 
 [study01]: http://www.slideshare.net/utilforever/c-programming-1s-study
 [study02]: http://www.slideshare.net/utilforever/c-programming-2nd-study
