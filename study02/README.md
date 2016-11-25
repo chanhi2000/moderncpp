@@ -236,6 +236,54 @@
 	}
 	```
 
+
+## `static_cast`
+- C에서는 ()를 통해 명시적 캐스팅 (Explicit Casting)을 할 수 있음.
+- C의 명시적 캐스팅은 개발자의 실수를 그대로 용납하기 때문에 차후에 오류가 생길 가능성이 있음.
+- C++에서는 좀 더 명시적인 캐스팅 방법을 통해 개발자가 캐스팅의 목적을 명확하게 명시함으로써 개발자의 의도를 컴파일러에게 전달하며 오류를 방지함.
+	- *__ex__*: `static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`
+	- `_cast-name<type>(표현식);`
+
+- __`static_cast`__: `const`를 제외한 모든 명확한 타입 변환에 사용
+	- [http://en.cppreference.com/w/cpp/language/static_cast][link01]
+- __`dynamic_cast`__: 기본 타입에 대한 포인터나 참조자를 파생 타입에 대한 포인터나 참조자로 안전하게 변환
+	- [http://en.cppreference.com/w/cpp/language/dynamic_cast][link02]
+- __`const_cast`__: `const` 객체를 `const`가 아닌 타입으로 변환
+	- [http://en.cppreference.com/w/cpp/language/const_cast][link03]
+- __`reinterpret_cast`__: 비트 구성 형식을 저수준에서 재해석
+	- [http://en.cppreference.com/w/cpp/language/reinterpret_cast][link04]
+
+
+## EXAMPLE: `static_cast`
+- ### 예제#04a:
+	- [C++98][ex04a]:
+	```cpp
+	#include <iostream>
+	int main()
+	{
+		char* str = "Hello, World";
+		
+		/*
+		 * SEG FAULT
+		 */
+		// int* pi = (int*)str;
+		// char* pc = (char*)*pi;
+		// std::cout << pc << std::endl;
+		
+		/*
+		 * CASTING ERROR
+		 */
+		int* pi1 = static_cast<int*>(str);
+		char* pc1 = static_cast<char*>(*pi1); 
+		std::cout << pc1 << std::endl;
+	
+		return 0;
+	}
+	```
+
+
+
+
 [ex01a]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example01a.cpp
 [ex01b]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example01b.py
 [ex02a(1)]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example02a.c
@@ -244,8 +292,13 @@
 [ex03a]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03a.cpp
 [ex03b]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03b.cpp
 [ex03c]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example03c.cpp
+[ex04a]: https://github.com/chanhi2000/moderncpp/blob/study02/study02/examples/example04a.cpp
 
 
+[link01]: http://en.cppreference.com/w/cpp/language/static_cast
+[link02]: http://en.cppreference.com/w/cpp/language/dynamic_cast
+[link03]: http://en.cppreference.com/w/cpp/language/const_cast
+[link04]: http://en.cppreference.com/w/cpp/language/reinterpret_cast
 
 
 
