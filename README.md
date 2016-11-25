@@ -5,6 +5,7 @@ description:
 - ~~1st study to complete~~
 - 2nd study to complete
 	- static_cast to finish
+	http://www.slideshare.net/utilforever/c-programming-2nd-study
 - 3rd study to start
 
 ## SLIDES:
@@ -33,7 +34,7 @@ description:
 	- (2nd study) `malloc`, `free` -> `new`, `delete`
 	- (2nd study) `NULL` -> `nullptr`
 	- (2nd study) `static_cast`
-	
+
 
 [study01]: http://www.slideshare.net/utilforever/c-programming-1s-study
 [study02]: http://www.slideshare.net/utilforever/c-programming-2nd-study
